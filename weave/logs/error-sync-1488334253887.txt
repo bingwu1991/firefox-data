@@ -1,0 +1,163 @@
+1488333653355	browserwindow.syncui	DEBUG	observed: weave:ui:sync:finish
+1488333654192	Sync.Tracker.Clients	DEBUG	Saving changed IDs to clients
+1488333654293	Sync.Tracker.mozCN.NTab	DEBUG	Saving changed IDs to mozcn.ntab
+1488333654299	Sync.Tracker.Passwords	DEBUG	Saving changed IDs to passwords
+1488333654308	Sync.Tracker.Bookmarks	DEBUG	Saving changed IDs to bookmarks
+1488333654342	Sync.Tracker.Addons	DEBUG	Saving changed IDs to addons
+1488333694994	Services.Common.RESTRequest	TRACE	onStartRequest: GET https://profile.firefox.com.cn/v1/profile
+1488333694995	Services.Common.RESTRequest	TRACE	Channel for GET https://profile.firefox.com.cn/v1/profile returned status code 2152398862
+1488333694995	Services.Common.RESTRequest	DEBUG	GET https://profile.firefox.com.cn/v1/profile failed: 2152398862 - NS_ERROR_NET_TIMEOUT
+1488333694996	FirefoxAccounts	ERROR	Background refresh of profile failed: {"name":"FxAccountsProfileClientError","code":null,"errno":998,"error":"NETWORK_ERROR","message":"[Exception... \"NS_ERROR_NET_TIMEOUT\"  nsresult: \"0x804b000e (NS_ERROR_NET_TIMEOUT)\"  location: \"JS frame :: resource://services-common/rest.js :: onStopRequest :: line 483\"  data: no]"}
+1488334253363	Sync.Service	DEBUG	User-Agent: Firefox/51.0.1 (Windows NT 6.1; WOW64) FxSync/1.53.0.20170125094131.desktop
+1488334253363	Sync.Service	INFO	Starting sync at 2017-03-01 10:10:53
+1488334253364	browserwindow.syncui	DEBUG	observed: weave:service:sync:start
+1488334253365	browserwindow.syncui	DEBUG	onActivityStart
+1488334253367	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1488334253368	Sync.Telemetry	TRACE	observed weave:service:sync:start 
+1488334253369	Sync.Status	INFO	Resetting Status.
+1488334253369	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1488334253371	FirefoxAccounts	DEBUG	already verified
+1488334253372	Sync.BrowserIDManager	INFO	Getting an assertion from: https://sync.firefox.com.cn/token/1.0/sync/1.5
+1488334253373	FirefoxAccounts	DEBUG	enter getAssertion()
+1488334253374	browserwindow.syncui	DEBUG	_loginFailed has sync state=success.login
+1488334253375	FirefoxAccounts	DEBUG	getKeypairAndCertificate: already have keyPair and certificate
+1488334253375	FirefoxAccounts	DEBUG	getAssertionFromCert
+1488334253376	browserwindow.syncui	DEBUG	_loginFailed has sync state=success.login
+1488334253378	FirefoxAccounts	DEBUG	getAssertionFromCert returning signed: true
+1488334253379	Sync.BrowserIDManager	DEBUG	Getting a token
+1488334253379	Common.TokenServerClient	DEBUG	Beginning BID assertion exchange: https://sync.firefox.com.cn/token/1.0/sync/1.5
+1488334253379	Services.Common.RESTRequest	DEBUG	GET request to https://sync.firefox.com.cn/token/1.0/sync/1.5
+1488334253380	Services.Common.RESTRequest	TRACE	HTTP Header accept: application/json
+1488334253381	Services.Common.RESTRequest	TRACE	HTTP Header authorization: ***** (suppressed)
+1488334253381	Services.Common.RESTRequest	TRACE	HTTP Header x-client-state: 9b8c350718757a0aabf6ada9c42454c1
+1488334253550	Services.Common.RESTRequest	TRACE	onStartRequest: GET https://sync.firefox.com.cn/token/1.0/sync/1.5
+1488334253550	Services.Common.RESTRequest	TRACE	Channel for GET https://sync.firefox.com.cn/token/1.0/sync/1.5 returned status code 0
+1488334253550	Services.Common.RESTRequest	DEBUG	GET https://sync.firefox.com.cn/token/1.0/sync/1.5 200
+1488334253550	Services.Common.RESTRequest	TRACE	GET body: {"uid": 1580274, "hashalg": "sha256", "api_endpoint": "https://s7-sync.firefox.com.cn/1.5/1580274", "duration": 300, "key": "oVfl1R5dEsk0XCSl7Ct94gHyZ2sc2fTeDvj65y-s41M=", "hashed_fxa_uid": "278a94602647c7057877f63dec860a2a", "id": "eyJub2RlIjogImh0dHBzOi8vczctc3luYy5maXJlZm94LmNvbS5jbiIsICJ1aWQiOiAxNTgwMjc0LCAiZXhwaXJlcyI6IDE0ODgzMzQ1NTMsICJmeGFfdWlkIjogIjI3OGE5NDYwMjY0N2M3MDU3ODc3ZjYzZGVjODYwYTJhIiwgInNhbHQiOiAiNmQ1NWEzIiwgImRldmljZV9pZCI6ICI4OWM1NDFmZDI0Nzg2YWQ2OWE3NGE3OTU2NjYwMDFmYSJ9R656tPWuDsHo_kxmUU5jsvIs8RuEp8umERl_PaVMFiM="}
+1488334253550	Common.TokenServerClient	DEBUG	Got token response: 200
+1488334253551	Common.TokenServerClient	DEBUG	Successful token response
+1488334253551	Sync.BrowserIDManager	DEBUG	Successfully got a sync token
+1488334253554	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1488334253554	FirefoxAccounts	DEBUG	getOAuthToken enter
+1488334253555	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1488334253555	Services.Common.RESTRequest	DEBUG	GET request to https://profile.firefox.com.cn/v1/profile
+1488334253555	Services.Common.RESTRequest	TRACE	HTTP Header authorization: ***** (suppressed)
+1488334253555	Services.Common.RESTRequest	TRACE	HTTP Header accept: application/json
+1488334253682	Services.Common.RESTRequest	TRACE	onStartRequest: GET https://profile.firefox.com.cn/v1/profile
+1488334253683	Services.Common.RESTRequest	TRACE	Channel for GET https://profile.firefox.com.cn/v1/profile returned status code 0
+1488334253683	Services.Common.RESTRequest	DEBUG	GET https://profile.firefox.com.cn/v1/profile 200
+1488334253683	Services.Common.RESTRequest	TRACE	GET body: {"email":"bingwu1991@gmail.com","uid":"e58575a3034249e5b5f87b73a9c34ae7","displayName":"bing"}
+1488334253684	FirefoxAccounts	DEBUG	fetched profile matches cached copy
+1488334253702	Sync.Resource	DEBUG	mesg: GET success 200 https://s7-sync.firefox.com.cn/1.5/1580274/info/collections
+1488334253702	Sync.Resource	DEBUG	GET success 200 https://s7-sync.firefox.com.cn/1.5/1580274/info/collections
+1488334253703	Sync.Service	DEBUG	Fetching server configuration: https://s7-sync.firefox.com.cn/1.5/1580274/info/configuration
+1488334253705	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1488334253760	Sync.Resource	DEBUG	mesg: GET success 200 https://s7-sync.firefox.com.cn/1.5/1580274/info/configuration
+1488334253760	Sync.Resource	DEBUG	GET success 200 https://s7-sync.firefox.com.cn/1.5/1580274/info/configuration
+1488334253760	Sync.Service	DEBUG	Fetching global metadata record
+1488334253761	Sync.Service	DEBUG	Weave Version: 1.53.0 Local Storage: 5 Remote Storage: 5
+1488334253761	Sync.Service	INFO	Sync key is up-to-date: no need to upgrade.
+1488334253761	Sync.Service	DEBUG	Fetching and verifying -- or generating -- symmetric keys.
+1488334253761	Sync.Service	INFO	Testing info/collections: {"passwords":1488264445.27,"addons":1488280399.04,"clients":1488328557.14,"mozcn.ntab":1484702246,"crypto":1480985799.67,"meta":1487328497.98,"bookmarks":1488260603.89,"prefs":1488329063.14}
+1488334253761	Sync.CollectionKeyManager	INFO	Testing for updateNeeded. Last modified: 1480985799.67
+1488334253761	Sync.Synchronizer	DEBUG	Refreshing client list.
+1488334253762	Sync.Telemetry	TRACE	observed weave:engine:sync:start clients
+1488334253762	Sync.Engine.Clients	INFO	0 outgoing items pre-reconciliation
+1488334253766	Sync.BrowserIDManager	DEBUG	_ensureValidToken already has one
+1488334253827	Sync.Collection	DEBUG	mesg: GET success 200 https://s7-sync.firefox.com.cn/1.5/1580274/storage/clients?full=1
+1488334253827	Sync.Collection	DEBUG	GET success 200 https://s7-sync.firefox.com.cn/1.5/1580274/storage/clients?full=1
+1488334253828	Sync.Engine.Clients	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 2 reconciled.
+1488334253829	Sync.Telemetry	TRACE	observed weave:engine:sync:applied clients
+1488334253837	browserwindow.syncui	DEBUG	observed: weave:engine:sync:finish
+1488334253838	Sync.Telemetry	TRACE	observed weave:engine:sync:finish clients
+1488334253838	Sync.Synchronizer	INFO	Updating enabled engines: 2 clients.
+1488334253840	Sync.Synchronizer	INFO	Syncing all enabled engines.
+1488334253840	Sync.Telemetry	TRACE	observed weave:engine:sync:start mozcn.ntab
+1488334253841	Sync.Telemetry	INFO	Notification for engine mozcn.ntab, but we aren't recording telemetry for it
+1488334253841	Sync.Engine.mozCN.NTab	INFO	0 outgoing items pre-reconciliation
+1488334253842	Sync.Engine.mozCN.NTab	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1488334253843	Sync.Telemetry	TRACE	observed weave:engine:sync:applied mozcn.ntab
+1488334253843	Sync.Telemetry	INFO	Notification for engine mozcn.ntab, but we aren't recording telemetry for it
+1488334253843	browserwindow.syncui	DEBUG	observed: weave:engine:sync:finish
+1488334253843	Sync.Telemetry	TRACE	observed weave:engine:sync:finish mozcn.ntab
+1488334253843	Sync.Telemetry	INFO	Notification for engine mozcn.ntab, but we aren't recording telemetry for it
+1488334253844	Sync.Telemetry	TRACE	observed weave:engine:sync:start prefs
+1488334253844	Sync.Engine.Prefs	INFO	0 outgoing items pre-reconciliation
+1488334253845	Sync.Engine.Prefs	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1488334253846	Sync.Telemetry	TRACE	observed weave:engine:sync:applied prefs
+1488334253846	browserwindow.syncui	DEBUG	observed: weave:engine:sync:finish
+1488334253846	Sync.Telemetry	TRACE	observed weave:engine:sync:finish prefs
+1488334253846	Sync.Telemetry	TRACE	observed weave:engine:sync:start passwords
+1488334253847	Sync.Engine.Passwords	INFO	0 outgoing items pre-reconciliation
+1488334253848	Sync.Engine.Passwords	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1488334253849	Sync.Telemetry	TRACE	observed weave:engine:sync:applied passwords
+1488334253849	browserwindow.syncui	DEBUG	observed: weave:engine:sync:finish
+1488334253849	Sync.Telemetry	TRACE	observed weave:engine:sync:finish passwords
+1488334253850	Sync.Telemetry	TRACE	observed weave:engine:sync:start bookmarks
+1488334253851	Sync.Engine.Bookmarks	INFO	0 outgoing items pre-reconciliation
+1488334253853	Sync.Engine.Bookmarks	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1488334253853	Sync.Telemetry	TRACE	observed weave:engine:sync:applied bookmarks
+1488334253854	browserwindow.syncui	DEBUG	observed: weave:engine:sync:finish
+1488334253854	Sync.Telemetry	TRACE	observed weave:engine:sync:finish bookmarks
+1488334253855	Sync.Telemetry	TRACE	observed weave:engine:sync:start addons
+1488334253855	Sync.Engine.Addons	DEBUG	Refreshing reconciler state
+1488334253855	Sync.AddonsReconciler	INFO	Refreshing global state from AddonManager.
+1488334253857	Sync.AddonsReconciler	DEBUG	Rectifying state for addon 火狐修复工具 (version=0.13, id=commonfix@mozillaonline.com)
+1488334253857	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Haici dictionary capture text (version=2.0, id=capturetext@dict.cn)
+1488334253857	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Adblock Plus (version=2.8.2, id={d10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d})
+1488334253857	Sync.AddonsReconciler	DEBUG	Rectifying state for addon RESTer (version=2.0.1, id=rester@kuehle.me)
+1488334253858	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Multi-process staged rollout (version=1.7, id=e10srollout@mozilla.org)
+1488334253858	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Pocket (version=1.0.5, id=firefox@getpocket.com)
+1488334253858	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Web Compat (version=1.0, id=webcompat@mozilla.org)
+1488334253858	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Application Update Service Helper (version=1.0, id=aushelper@mozilla.org)
+1488334253858	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Default (version=51.0.1, id={972ce4c6-7e08-4474-a285-3208198ce6fd})
+1488334253858	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Easy Screenshot (version=2.52, id=easyscreenshot@mozillaonline.com)
+1488334253858	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Addons Manager (version=2.52, id=cpmanager@mozillaonline.com)
+1488334253858	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Tab Tweak (version=4.52, id=tabtweak@mozillaonline.com)
+1488334253858	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Firefox Homepage (version=1.52, id=cehomepage@mozillaonline.com)
+1488334253858	Sync.AddonsReconciler	DEBUG	Rectifying state for addon COBA (version=2.52, id=coba@mozilla.com.cn)
+1488334253858	Sync.AddonsReconciler	DEBUG	Rectifying state for addon VimFx (version=0.20.9, id=VimFx@akhodakivskiy.github.com)
+1488334253859	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Diagnostics (version=1.0, id=diagnostics@mozilla.org)
+1488334253859	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Send HSTS Priming Requests (version=1.0, id=hsts-priming@mozilla.org)
+1488334253859	Sync.AddonsReconciler	DEBUG	Rectifying state for addon SHA-1 deprecation staged rollout (version=1.3, id=disableSHA1rollout@mozilla.org)
+1488334253859	Sync.AddonsReconciler	DEBUG	Rectifying state for addon OpenH264 Video Codec provided by Cisco Systems, Inc. (version=1.6, id=gmp-gmpopenh264)
+1488334253859	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Primetime Content Decryption Module provided by Adobe Systems, Incorporated (version=17, id=gmp-eme-adobe)
+1488334253859	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Widevine Content Decryption Module provided by Google Inc. (version=1.4.8.903, id=gmp-widevinecdm)
+1488334253859	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Adobe Acrobat (version=11.0.0.379, id={8ba05659-b7b2-056b-9771-d14f1d7a038c})
+1488334253859	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Thunder DapCtrl NPAPI Plugin (version=3.3.1.17, id={9b12657e-a060-a592-1dfb-5e57ebf3199b})
+1488334253859	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Google Update (version=1.3.32.7, id={10c68f07-63a6-4653-8f43-9fc763f22443})
+1488334253859	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Microsoft Office 2013 (version=15.0.4420.1017, id={866912b6-1ee0-4cd9-a6d9-048afd1d6590})
+1488334253859	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Microsoft Office 2013 (version=15.0.4420.1017, id={62b2beb2-2a4e-aece-1a63-e56675ef755a})
+1488334253859	Sync.AddonsReconciler	DEBUG	Rectifying state for addon BaiduYunGuanjia Application (version=5.5.2.0, id={802d15f0-5288-8a0f-b68d-784322f30dd9})
+1488334253859	Sync.AddonsReconciler	DEBUG	Rectifying state for addon BaiduSetUp Plugin (version=1.38.0.0, id={5dd7fd50-7af0-de3b-5f9e-7a11519e7a1e})
+1488334253859	Sync.AddonsReconciler	DEBUG	Rectifying state for addon 百度网页启动组件 (version=3.0.359.0, id={977c1f19-dd96-c80a-c201-c2c3164fd01c})
+1488334253860	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Shockwave Flash (version=24.0.0.221, id={fdf1cc26-48c9-18af-3146-d16bf63810bd})
+1488334253862	Sync.AddonsReconciler	DEBUG	Rectifying state for addon XunLei Plugin (version=1.0.0.2, id={e35c2b1c-2f33-6a1d-5fce-68ae755832a2})
+1488334253862	Sync.AddonsReconciler	DEBUG	Rectifying state for addon China Online Banking Assistant (version=1.0.0.1, id={8726f523-9ba7-17b7-8502-76f68433bbfc})
+1488334253869	Sync.AddonsReconciler	INFO	Saving reconciler state to file: addonsreconciler
+1488334253879	Sync.Engine.Addons	INFO	0 outgoing items pre-reconciliation
+1488334253880	Sync.Engine.Addons	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1488334253880	Sync.Telemetry	TRACE	observed weave:engine:sync:applied addons
+1488334253881	browserwindow.syncui	DEBUG	observed: weave:engine:sync:finish
+1488334253881	Sync.Telemetry	TRACE	observed weave:engine:sync:finish addons
+1488334253881	Sync.Status	DEBUG	Status.sync: success.sync => success.sync
+1488334253881	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1488334253881	Sync.Synchronizer	INFO	Sync completed at 2017-03-01 10:10:53 after 0.51 secs.
+1488334253882	Sync.Declined	DEBUG	Handling remote declined: ["history","tabs"]
+1488334253882	Sync.Declined	DEBUG	Handling local declined: ["history","tabs"]
+1488334253882	Sync.Declined	DEBUG	Declined changed? false
+1488334253882	Sync.Service	INFO	No change to declined engines. Not reuploading meta/global.
+1488334253882	browserwindow.syncui	DEBUG	observed: weave:service:sync:finish
+1488334253883	browserwindow.syncui	DEBUG	onActivityStop
+1488334253883	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms.
+1488334253884	Sync.Telemetry	TRACE	observed weave:service:sync:finish 
+1488334253886	Sync.ErrorHandler	DEBUG	Addons installed: 9
+1488334253886	Sync.ErrorHandler	DEBUG	 - 火狐修复工具, version 0.13, id commonfix@mozillaonline.com
+1488334253887	Sync.ErrorHandler	DEBUG	 - Adblock Plus, version 2.8.2, id {d10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d}
+1488334253887	Sync.ErrorHandler	DEBUG	 - RESTer, version 2.0.1, id rester@kuehle.me
+1488334253887	Sync.ErrorHandler	DEBUG	 - Easy Screenshot, version 2.52, id easyscreenshot@mozillaonline.com
+1488334253887	Sync.ErrorHandler	DEBUG	 - Addons Manager, version 2.52, id cpmanager@mozillaonline.com
+1488334253887	Sync.ErrorHandler	DEBUG	 - Tab Tweak, version 4.52, id tabtweak@mozillaonline.com
+1488334253887	Sync.ErrorHandler	DEBUG	 - Firefox Homepage, version 1.52, id cehomepage@mozillaonline.com
+1488334253887	Sync.ErrorHandler	DEBUG	 - COBA, version 2.52, id coba@mozilla.com.cn
+1488334253887	Sync.ErrorHandler	DEBUG	 - VimFx, version 0.20.9, id VimFx@akhodakivskiy.github.com
