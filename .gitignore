@@ -1,5 +1,4 @@
 # ignore follow file type
 /* 
 !.gitignore
-!/bookmarkbackups
 !/browser-extension-data/rester@kuehle.me
